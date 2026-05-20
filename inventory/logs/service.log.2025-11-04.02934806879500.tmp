@@ -1,0 +1,93 @@
+2025-11-09T21:26:31.970+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] c.e.inventory.InventoryApplication       : Starting InventoryApplication using Java 21.0.8 with PID 2689 (/Users/yashdeshmukh/Documents/project/project/inventory/target/classes started by yashdeshmukh in /Users/yashdeshmukh/Documents/project/project/inventory)
+2025-11-09T21:26:31.977+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] c.e.inventory.InventoryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-11-09T21:26:37.345+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-09T21:26:38.024+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 657 ms. Found 1 JPA repository interface.
+2025-11-09T21:26:39.209+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c44580fe-f59b-3b9f-ab96-02e1657ebd25
+2025-11-09T21:26:41.464+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8086 (http)
+2025-11-09T21:26:41.562+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-09T21:26:41.606+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-09T21:26:42.462+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-09T21:26:42.624+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10264 ms
+2025-11-09T21:26:43.896+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-09T21:26:44.079+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-09T21:26:44.282+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-09T21:26:44.967+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-09T21:26:45.366+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-09T21:26:47.149+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e62e227
+2025-11-09T21:26:47.152+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-09T21:26:47.551+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-09T21:26:53.824+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-09T21:26:54.400+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-09T21:26:57.798+05:30  WARN 2689 --- [INVENTORY-SERVICE] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-09T21:26:59.708+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'PRODUCT-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2025-11-09T21:27:03.551+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-11-09T21:27:03.914+05:30  WARN 2689 --- [INVENTORY-SERVICE] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-11-09T21:27:04.870+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-11-09T21:27:04.986+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-11-09T21:27:05.078+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T21:27:05.120+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-11-09T21:27:05.121+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-11-09T21:27:05.121+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-11-09T21:27:05.121+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-11-09T21:27:05.121+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-11-09T21:27:05.122+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-11-09T21:27:05.122+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-11-09T21:27:07.724+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-11-09T21:27:07.845+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-11-09T21:27:07.852+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-11-09T21:27:07.857+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1762703827854 with initial instances count: 0
+2025-11-09T21:27:07.910+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application INVENTORY-SERVICE with eureka with status UP
+2025-11-09T21:27:07.911+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1762703827911, current=UP, previous=STARTING]
+2025-11-09T21:27:07.914+05:30  INFO 2689 --- [INVENTORY-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_INVENTORY-SERVICE/192.168.0.106:INVENTORY-SERVICE:8086: registering service...
+2025-11-09T21:27:08.019+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8086 (http) with context path '/'
+2025-11-09T21:27:08.044+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8086
+2025-11-09T21:27:08.198+05:30  INFO 2689 --- [INVENTORY-SERVICE] [main] c.e.inventory.InventoryApplication       : Started InventoryApplication in 39.098 seconds (process running for 44.11)
+2025-11-09T21:27:08.774+05:30  INFO 2689 --- [INVENTORY-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_INVENTORY-SERVICE/192.168.0.106:INVENTORY-SERVICE:8086 - registration status: 204
+2025-11-09T21:27:37.842+05:30  INFO 2689 --- [INVENTORY-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-11-09T21:27:37.845+05:30  INFO 2689 --- [INVENTORY-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-11-09T21:27:37.845+05:30  INFO 2689 --- [INVENTORY-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-11-09T21:27:37.845+05:30  INFO 2689 --- [INVENTORY-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-11-09T21:27:37.845+05:30  INFO 2689 --- [INVENTORY-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-11-09T21:27:37.845+05:30  INFO 2689 --- [INVENTORY-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-11-09T21:27:37.845+05:30  INFO 2689 --- [INVENTORY-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-11-09T21:27:37.896+05:30  INFO 2689 --- [INVENTORY-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-11-09T21:32:05.136+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T21:32:12.919+05:30  INFO 2689 --- [INVENTORY-SERVICE] [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-09T21:32:12.919+05:30  INFO 2689 --- [INVENTORY-SERVICE] [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-09T21:32:12.925+05:30  INFO 2689 --- [INVENTORY-SERVICE] [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2025-11-09T21:37:05.145+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T21:42:05.154+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T21:47:05.161+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T21:52:05.166+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T21:57:05.194+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T22:02:05.208+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T22:07:05.214+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T22:12:05.206+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T22:17:05.216+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T22:22:05.227+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T22:27:05.261+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T22:32:05.275+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T22:37:05.314+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T22:42:05.330+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T22:47:05.364+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T22:52:05.388+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T22:57:05.399+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T23:02:05.412+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T23:07:05.411+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T23:12:05.432+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T23:17:05.444+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T23:22:05.467+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T23:27:05.481+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T23:32:05.497+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T23:37:05.508+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T23:42:05.513+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T23:47:05.518+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T23:52:05.535+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T23:57:05.547+05:30  INFO 2689 --- [INVENTORY-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

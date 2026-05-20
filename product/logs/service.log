@@ -1,0 +1,816 @@
+2026-01-07T09:46:33.168+05:30  INFO 19412 --- [product-service] [main] com.example.product.ProductApplication   : Starting ProductApplication using Java 21.0.8 with PID 19412 (C:\Users\yrajivde\Desktop\project_l\backend\product\target\classes started by yrajivde in C:\Users\yrajivde\Desktop\project_l\backend\product)
+2026-01-07T09:46:33.208+05:30  INFO 19412 --- [product-service] [main] com.example.product.ProductApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-07T09:46:37.429+05:30  INFO 19412 --- [product-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-07T09:46:37.972+05:30  INFO 19412 --- [product-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 525 ms. Found 4 JPA repository interfaces.
+2026-01-07T09:46:38.704+05:30  INFO 19412 --- [product-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=41c7facf-f195-3462-84a9-f663e08b64dc
+2026-01-07T09:46:39.810+05:30  WARN 19412 --- [product-service] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-01-07T09:46:39.841+05:30  WARN 19412 --- [product-service] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-01-07T09:46:40.850+05:30  INFO 19412 --- [product-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2026-01-07T09:46:40.889+05:30  INFO 19412 --- [product-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-07T09:46:40.891+05:30  INFO 19412 --- [product-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-01-07T09:46:41.203+05:30  INFO 19412 --- [product-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-07T09:46:41.204+05:30  INFO 19412 --- [product-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7774 ms
+2026-01-07T09:46:42.497+05:30  INFO 19412 --- [product-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-07T09:46:42.745+05:30  INFO 19412 --- [product-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-01-07T09:46:42.847+05:30  INFO 19412 --- [product-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-07T09:46:43.744+05:30  INFO 19412 --- [product-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-07T09:46:43.820+05:30  INFO 19412 --- [product-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-07T09:46:44.746+05:30  INFO 19412 --- [product-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b76b891
+2026-01-07T09:46:44.750+05:30  INFO 19412 --- [product-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-07T09:46:47.658+05:30  INFO 19412 --- [product-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-07T09:46:47.846+05:30  INFO 19412 --- [product-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-07T09:46:49.232+05:30  INFO 19412 --- [product-service] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-07T09:46:49.984+05:30  WARN 19412 --- [product-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-07T09:46:50.442+05:30  INFO 19412 --- [product-service] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'INVENTORY-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2026-01-07T09:46:53.803+05:30  INFO 19412 --- [product-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-01-07T09:46:53.888+05:30  WARN 19412 --- [product-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-07T09:46:53.925+05:30  INFO 19412 --- [product-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-01-07T09:46:54.114+05:30  INFO 19412 --- [product-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-01-07T09:46:54.161+05:30  INFO 19412 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-01-07T09:46:54.171+05:30  INFO 19412 --- [product-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-07T09:46:54.192+05:30  INFO 19412 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-01-07T09:46:54.192+05:30  INFO 19412 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-01-07T09:46:54.193+05:30  INFO 19412 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-01-07T09:46:54.193+05:30  INFO 19412 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-01-07T09:46:54.193+05:30  INFO 19412 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-01-07T09:46:54.193+05:30  INFO 19412 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-01-07T09:46:54.193+05:30  INFO 19412 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-01-07T09:46:54.881+05:30  INFO 19412 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-01-07T09:46:54.884+05:30  INFO 19412 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-01-07T09:46:54.891+05:30  INFO 19412 --- [product-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-07T09:46:54.898+05:30  INFO 19412 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1767759414895 with initial instances count: 0
+2026-01-07T09:46:54.934+05:30  INFO 19412 --- [product-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PRODUCT-SERVICE with eureka with status UP
+2026-01-07T09:46:54.937+05:30  INFO 19412 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1767759414936, current=UP, previous=STARTING]
+2026-01-07T09:46:54.942+05:30  INFO 19412 --- [product-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/10.75.36.196:product-service:8082: registering service...
+2026-01-07T09:46:55.001+05:30  INFO 19412 --- [product-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2026-01-07T09:46:55.003+05:30  INFO 19412 --- [product-service] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-01-07T09:46:55.042+05:30  INFO 19412 --- [product-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/10.75.36.196:product-service:8082 - registration status: 204
+2026-01-07T09:46:55.049+05:30  INFO 19412 --- [product-service] [main] com.example.product.ProductApplication   : Started ProductApplication in 24.166 seconds (process running for 27.209)
+2026-01-07T09:46:55.336+05:30  INFO 19412 --- [product-service] [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-07T09:46:55.336+05:30  INFO 19412 --- [product-service] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-07T09:46:55.339+05:30  INFO 19412 --- [product-service] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-01-07T09:47:15.216+05:30  INFO 19412 --- [product-service] [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-01-07T09:47:15.219+05:30  INFO 19412 --- [product-service] [RMI TCP Connection(9)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PRODUCT-SERVICE with eureka with status DOWN
+2026-01-07T09:47:15.219+05:30  INFO 19412 --- [product-service] [RMI TCP Connection(9)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1767759435219, current=DOWN, previous=UP]
+2026-01-07T09:47:15.219+05:30  INFO 19412 --- [product-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/10.75.36.196:product-service:8082: registering service...
+2026-01-07T09:47:15.251+05:30  INFO 19412 --- [product-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/10.75.36.196:product-service:8082 - registration status: 204
+2026-01-07T09:47:15.271+05:30  INFO 19412 --- [product-service] [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-07T09:47:15.283+05:30  INFO 19412 --- [product-service] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-07T09:47:15.404+05:30  INFO 19412 --- [product-service] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-07T09:47:15.405+05:30  INFO 19412 --- [product-service] [RMI TCP Connection(9)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-01-07T09:47:18.410+05:30  INFO 19412 --- [product-service] [RMI TCP Connection(9)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-01-07T09:47:18.438+05:30  INFO 19412 --- [product-service] [RMI TCP Connection(9)-127.0.0.1] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/10.75.36.196:product-service:8082": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/10.75.36.196:product-service:8082": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:915)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:895)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:672)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1156)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1102)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:91)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:90)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:123)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:189)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:450)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:170)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
+	... 68 more
+
+2026-01-07T09:47:18.439+05:30  WARN 19412 --- [product-service] [RMI TCP Connection(9)-127.0.0.1] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/10.75.36.196:product-service:8082": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+2026-01-07T09:47:18.452+05:30  INFO 19412 --- [product-service] [RMI TCP Connection(9)-127.0.0.1] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/10.75.36.196:product-service:8082": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/10.75.36.196:product-service:8082": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:915)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:895)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:672)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1156)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1102)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:91)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:90)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:123)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:189)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:450)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:170)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
+	... 69 more
+
+2026-01-07T09:47:18.452+05:30  WARN 19412 --- [product-service] [RMI TCP Connection(9)-127.0.0.1] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/10.75.36.196:product-service:8082": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+2026-01-07T09:47:18.453+05:30 ERROR 19412 --- [product-service] [RMI TCP Connection(9)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/10.75.36.196:product-service:8082 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.3.jar:2.0.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.3.jar:2.0.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-2.0.3.jar:2.0.3]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.3.jar:2.0.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.3.jar:2.0.3]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919) ~[eureka-client-2.0.3.jar:2.0.3]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900) ~[eureka-client-2.0.3.jar:2.0.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389) ~[spring-cloud-context-4.1.4.jar:4.1.4]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136) ~[spring-cloud-context-4.1.4.jar:4.1.4]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1195) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1156) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1102) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-3.3.5.jar:3.3.5]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-01-07T09:47:18.463+05:30  INFO 19412 --- [product-service] [RMI TCP Connection(9)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-01-07T09:50:57.772+05:30  INFO 34580 --- [product-service] [main] com.example.product.ProductApplication   : Starting ProductApplication using Java 21.0.8 with PID 34580 (C:\Users\yrajivde\Desktop\project_l\backend\product\target\classes started by yrajivde in C:\Users\yrajivde\Desktop\project_l\backend\product)
+2026-01-07T09:50:57.782+05:30  INFO 34580 --- [product-service] [main] com.example.product.ProductApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-07T09:51:02.321+05:30  INFO 34580 --- [product-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-07T09:51:02.836+05:30  INFO 34580 --- [product-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 496 ms. Found 4 JPA repository interfaces.
+2026-01-07T09:51:03.639+05:30  INFO 34580 --- [product-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=41c7facf-f195-3462-84a9-f663e08b64dc
+2026-01-07T09:51:04.761+05:30  WARN 34580 --- [product-service] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-01-07T09:51:04.771+05:30  WARN 34580 --- [product-service] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-01-07T09:51:05.823+05:30  INFO 34580 --- [product-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2026-01-07T09:51:05.869+05:30  INFO 34580 --- [product-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-07T09:51:05.871+05:30  INFO 34580 --- [product-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-01-07T09:51:06.159+05:30  INFO 34580 --- [product-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-07T09:51:06.162+05:30  INFO 34580 --- [product-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8219 ms
+2026-01-07T09:51:07.417+05:30  INFO 34580 --- [product-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-07T09:51:07.600+05:30  INFO 34580 --- [product-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-01-07T09:51:07.703+05:30  INFO 34580 --- [product-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-07T09:51:08.561+05:30  INFO 34580 --- [product-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-07T09:51:08.661+05:30  INFO 34580 --- [product-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-07T09:51:09.404+05:30  INFO 34580 --- [product-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b30b627
+2026-01-07T09:51:09.409+05:30  INFO 34580 --- [product-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-07T09:51:12.298+05:30  INFO 34580 --- [product-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-07T09:51:12.502+05:30  INFO 34580 --- [product-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-07T09:51:13.842+05:30  INFO 34580 --- [product-service] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-07T09:51:14.523+05:30  WARN 34580 --- [product-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-07T09:51:14.997+05:30  INFO 34580 --- [product-service] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'INVENTORY-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2026-01-07T09:51:18.569+05:30  INFO 34580 --- [product-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-01-07T09:51:18.655+05:30  WARN 34580 --- [product-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-07T09:51:18.712+05:30  INFO 34580 --- [product-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-01-07T09:51:18.870+05:30  INFO 34580 --- [product-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-01-07T09:51:18.920+05:30  INFO 34580 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-01-07T09:51:18.930+05:30  INFO 34580 --- [product-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-07T09:51:18.947+05:30  INFO 34580 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-01-07T09:51:18.948+05:30  INFO 34580 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-01-07T09:51:18.948+05:30  INFO 34580 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-01-07T09:51:18.948+05:30  INFO 34580 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-01-07T09:51:18.948+05:30  INFO 34580 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-01-07T09:51:18.948+05:30  INFO 34580 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-01-07T09:51:18.948+05:30  INFO 34580 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-01-07T09:51:19.514+05:30  INFO 34580 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-01-07T09:51:19.517+05:30  INFO 34580 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-01-07T09:51:19.520+05:30  INFO 34580 --- [product-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-07T09:51:19.524+05:30  INFO 34580 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1767759679523 with initial instances count: 0
+2026-01-07T09:51:19.543+05:30  INFO 34580 --- [product-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PRODUCT-SERVICE with eureka with status UP
+2026-01-07T09:51:19.545+05:30  INFO 34580 --- [product-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1767759679545, current=UP, previous=STARTING]
+2026-01-07T09:51:19.548+05:30  INFO 34580 --- [product-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/10.75.36.196:product-service:8082: registering service...
+2026-01-07T09:51:19.593+05:30  INFO 34580 --- [product-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2026-01-07T09:51:19.594+05:30  INFO 34580 --- [product-service] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-01-07T09:51:19.619+05:30  INFO 34580 --- [product-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/10.75.36.196:product-service:8082 - registration status: 204
+2026-01-07T09:51:19.627+05:30  INFO 34580 --- [product-service] [main] com.example.product.ProductApplication   : Started ProductApplication in 23.564 seconds (process running for 27.808)
+2026-01-07T09:51:19.977+05:30  INFO 34580 --- [product-service] [RMI TCP Connection(5)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-07T09:51:19.977+05:30  INFO 34580 --- [product-service] [RMI TCP Connection(5)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-07T09:51:19.980+05:30  INFO 34580 --- [product-service] [RMI TCP Connection(5)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-01-07T09:51:49.520+05:30  INFO 34580 --- [product-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-01-07T09:51:49.520+05:30  INFO 34580 --- [product-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-01-07T09:51:49.520+05:30  INFO 34580 --- [product-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-01-07T09:51:49.520+05:30  INFO 34580 --- [product-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-01-07T09:51:49.520+05:30  INFO 34580 --- [product-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-01-07T09:51:49.520+05:30  INFO 34580 --- [product-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-01-07T09:51:49.520+05:30  INFO 34580 --- [product-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-01-07T09:51:49.565+05:30  INFO 34580 --- [product-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-01-07T09:52:03.304+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-1] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.RatingController.checkUserRating with arguments: [1, 3]
+2026-01-07T09:52:03.304+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-2] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.RatingController.checkUserRating with arguments: [10, 3]
+2026-01-07T09:52:03.304+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-2] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.repository.RatingRepository.findByProduct_ProductIdAndUserId with arguments: [10, 3]
+2026-01-07T09:52:03.304+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-1] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.repository.RatingRepository.findByProduct_ProductIdAndUserId with arguments: [1, 3]
+2026-01-07T09:52:03.615+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-2] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.repository.RatingRepository.findByProduct_ProductIdAndUserId with return: null
+2026-01-07T09:52:03.615+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-1] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.repository.RatingRepository.findByProduct_ProductIdAndUserId with return: null
+2026-01-07T09:52:03.617+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-2] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.RatingController.checkUserRating with return: <200 OK OK,{userId=3, productId=10, hasRated=false, rating={}},[]>
+2026-01-07T09:52:03.617+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-1] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.RatingController.checkUserRating with return: <200 OK OK,{userId=3, productId=1, hasRated=false, rating={}},[]>
+2026-01-07T09:52:09.374+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-3] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.ProductController.getAllProducts with arguments: [null, null, null, null, null, null, price, asc, 0, 10]
+2026-01-07T09:52:09.382+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-3] com.example.product.aop.LoggingAspect    : Entering method: org.springframework.data.repository.ListCrudRepository.findAll with arguments: []
+2026-01-07T09:52:09.506+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-3] com.example.product.aop.LoggingAspect    : Exiting method: org.springframework.data.repository.ListCrudRepository.findAll with return: [com.example.product.model.Product@37da47c7, com.example.product.model.Product@373a2449, com.example.product.model.Product@22793b51, com.example.product.model.Product@19850e49, com.example.product.model.Product@1aeb514, com.example.product.model.Product@4c2bf343, com.example.product.model.Product@7931a469, com.example.product.model.Product@57452678, com.example.product.model.Product@52e80d17, com.example.product.model.Product@133c62be, com.example.product.model.Product@1c05a544, com.example.product.model.Product@1a137f91, com.example.product.model.Product@1a93f840, com.example.product.model.Product@1eeaacc5, com.example.product.model.Product@1d819129, com.example.product.model.Product@378701c2, com.example.product.model.Product@dee10ec, com.example.product.model.Product@238901ca, com.example.product.model.Product@2a266243, com.example.product.model.Product@39a3081, com.example.product.model.Product@7cd602e, com.example.product.model.Product@42429b34, com.example.product.model.Product@263cc1fe, com.example.product.model.Product@43233287, com.example.product.model.Product@1da29a1a, com.example.product.model.Product@24633e2d, com.example.product.model.Product@779b0423, com.example.product.model.Product@33bdd030, com.example.product.model.Product@7a027a28, com.example.product.model.Product@138ab59, com.example.product.model.Product@5acb6ce4, com.example.product.model.Product@20edbb25, com.example.product.model.Product@498a29f8, com.example.product.model.Product@43d846a3, com.example.product.model.Product@4036c301, com.example.product.model.Product@723772e0, com.example.product.model.Product@3c60a696, com.example.product.model.Product@220291e5, com.example.product.model.Product@49d5e02e, com.example.product.model.Product@a8099f]
+2026-01-07T09:52:10.412+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-4] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.CategoryController.getAllCategories with arguments: []
+2026-01-07T09:52:10.417+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-4] com.example.product.aop.LoggingAspect    : Entering method: org.springframework.data.repository.ListCrudRepository.findAll with arguments: []
+2026-01-07T09:52:10.420+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-5] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.ProductController.getAllProducts with arguments: [null, 0.0, 1000.0, null, null, null, price, asc, 0, 10]
+2026-01-07T09:52:10.421+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-5] com.example.product.aop.LoggingAspect    : Entering method: org.springframework.data.repository.ListCrudRepository.findAll with arguments: []
+2026-01-07T09:52:10.428+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-4] com.example.product.aop.LoggingAspect    : Exiting method: org.springframework.data.repository.ListCrudRepository.findAll with return: [com.example.product.model.Category@4bb79375, com.example.product.model.Category@9db591c, com.example.product.model.Category@a7d5316, com.example.product.model.Category@f4fa076, com.example.product.model.Category@207c7d32, com.example.product.model.Category@7663b193, com.example.product.model.Category@3e598cca, com.example.product.model.Category@3e007ce8, com.example.product.model.Category@4e1d965b, com.example.product.model.Category@3346053]
+2026-01-07T09:52:10.429+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-4] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.CategoryController.getAllCategories with return: <200 OK OK,[com.example.product.model.Category@4bb79375, com.example.product.model.Category@9db591c, com.example.product.model.Category@a7d5316, com.example.product.model.Category@f4fa076, com.example.product.model.Category@207c7d32, com.example.product.model.Category@7663b193, com.example.product.model.Category@3e598cca, com.example.product.model.Category@3e007ce8, com.example.product.model.Category@4e1d965b, com.example.product.model.Category@3346053],[]>
+2026-01-07T09:52:10.470+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-5] com.example.product.aop.LoggingAspect    : Exiting method: org.springframework.data.repository.ListCrudRepository.findAll with return: [com.example.product.model.Product@5c49047f, com.example.product.model.Product@80f742f, com.example.product.model.Product@1116f7ef, com.example.product.model.Product@18c8fc39, com.example.product.model.Product@520f7925, com.example.product.model.Product@574f5eb5, com.example.product.model.Product@14ee1a22, com.example.product.model.Product@1a8a6014, com.example.product.model.Product@b096801, com.example.product.model.Product@5a53d941, com.example.product.model.Product@3d2e6ce, com.example.product.model.Product@439b3a59, com.example.product.model.Product@1f06012e, com.example.product.model.Product@1ca7fba5, com.example.product.model.Product@1706ce88, com.example.product.model.Product@28b937d4, com.example.product.model.Product@6082e248, com.example.product.model.Product@beb06f0, com.example.product.model.Product@16fcb421, com.example.product.model.Product@51951742, com.example.product.model.Product@4e769bd7, com.example.product.model.Product@6e57bc5f, com.example.product.model.Product@69a90496, com.example.product.model.Product@968e199, com.example.product.model.Product@4ad50196, com.example.product.model.Product@3cb4c043, com.example.product.model.Product@2d865044, com.example.product.model.Product@50cb9501, com.example.product.model.Product@75c63ba, com.example.product.model.Product@1eecd445, com.example.product.model.Product@7e648000, com.example.product.model.Product@635e1cdd, com.example.product.model.Product@4de00f8c, com.example.product.model.Product@20a4d7a9, com.example.product.model.Product@85f9199, com.example.product.model.Product@173205e4, com.example.product.model.Product@2c77a03, com.example.product.model.Product@21b07097, com.example.product.model.Product@738ca650, com.example.product.model.Product@2b357230]
+2026-01-07T09:52:10.640+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-3] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.ProductController.getAllProducts with return: <200 OK OK,{totalItems=40, totalPages=4, pageSize=10, currentPage=0, products=[com.example.product.payload.ProductDTO@2bb87ab1, com.example.product.payload.ProductDTO@6d236d45, com.example.product.payload.ProductDTO@661771b6, com.example.product.payload.ProductDTO@69f280dc, com.example.product.payload.ProductDTO@1f702a1, com.example.product.payload.ProductDTO@77481e9f, com.example.product.payload.ProductDTO@2a0f4b01, com.example.product.payload.ProductDTO@5786cafc, com.example.product.payload.ProductDTO@6e5d38a7, com.example.product.payload.ProductDTO@59d67f15]},[]>
+2026-01-07T09:52:10.925+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-5] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.ProductController.getAllProducts with return: <200 OK OK,{totalItems=38, totalPages=4, pageSize=10, currentPage=0, products=[com.example.product.payload.ProductDTO@7ea324a5, com.example.product.payload.ProductDTO@225371d1, com.example.product.payload.ProductDTO@969f64d, com.example.product.payload.ProductDTO@51f9a7e6, com.example.product.payload.ProductDTO@36983770, com.example.product.payload.ProductDTO@f7c158b, com.example.product.payload.ProductDTO@496151b7, com.example.product.payload.ProductDTO@55bb19ea, com.example.product.payload.ProductDTO@226f979a, com.example.product.payload.ProductDTO@4d500e11]},[]>
+2026-01-07T09:52:11.012+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-6] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.WishlistController.isWishlisted with arguments: [38, 3]
+2026-01-07T09:52:11.011+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-7] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.WishlistController.isWishlisted with arguments: [39, 3]
+2026-01-07T09:52:11.016+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-7] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with arguments: [3, 39]
+2026-01-07T09:52:11.016+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-6] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with arguments: [3, 38]
+2026-01-07T09:52:11.043+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-6] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with return: Optional.empty
+2026-01-07T09:52:11.044+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-6] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.WishlistController.isWishlisted with return: <200 OK OK,{productId=38, wishlisted=false},[]>
+2026-01-07T09:52:11.044+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-7] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with return: Optional.empty
+2026-01-07T09:52:11.046+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-7] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.WishlistController.isWishlisted with return: <200 OK OK,{productId=39, wishlisted=false},[]>
+2026-01-07T09:52:11.052+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-8] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.WishlistController.isWishlisted with arguments: [40, 3]
+2026-01-07T09:52:11.056+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-10] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.WishlistController.isWishlisted with arguments: [19, 3]
+2026-01-07T09:52:11.056+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-8] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with arguments: [3, 40]
+2026-01-07T09:52:11.057+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-10] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with arguments: [3, 19]
+2026-01-07T09:52:11.067+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-10] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with return: Optional.empty
+2026-01-07T09:52:11.067+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-10] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.WishlistController.isWishlisted with return: <200 OK OK,{productId=19, wishlisted=false},[]>
+2026-01-07T09:52:11.068+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-9] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.WishlistController.isWishlisted with arguments: [21, 3]
+2026-01-07T09:52:11.071+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-9] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with arguments: [3, 21]
+2026-01-07T09:52:11.085+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-9] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with return: Optional.empty
+2026-01-07T09:52:11.098+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-9] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.WishlistController.isWishlisted with return: <200 OK OK,{productId=21, wishlisted=false},[]>
+2026-01-07T09:52:11.108+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-1] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.WishlistController.isWishlisted with arguments: [23, 3]
+2026-01-07T09:52:11.108+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-1] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with arguments: [3, 23]
+2026-01-07T09:52:11.113+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-2] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.WishlistController.isWishlisted with arguments: [36, 3]
+2026-01-07T09:52:11.115+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-8] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with return: Optional.empty
+2026-01-07T09:52:11.115+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-8] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.WishlistController.isWishlisted with return: <200 OK OK,{productId=40, wishlisted=false},[]>
+2026-01-07T09:52:11.115+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-4] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.WishlistController.isWishlisted with arguments: [18, 3]
+2026-01-07T09:52:11.115+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-2] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with arguments: [3, 36]
+2026-01-07T09:52:11.115+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-4] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with arguments: [3, 18]
+2026-01-07T09:52:11.121+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-1] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with return: Optional.empty
+2026-01-07T09:52:11.121+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-4] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with return: Optional.empty
+2026-01-07T09:52:11.121+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-1] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.WishlistController.isWishlisted with return: <200 OK OK,{productId=23, wishlisted=false},[]>
+2026-01-07T09:52:11.121+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-4] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.WishlistController.isWishlisted with return: <200 OK OK,{productId=18, wishlisted=false},[]>
+2026-01-07T09:52:11.129+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-2] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with return: Optional.empty
+2026-01-07T09:52:11.130+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-2] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.WishlistController.isWishlisted with return: <200 OK OK,{productId=36, wishlisted=false},[]>
+2026-01-07T09:52:11.149+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-5] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.WishlistController.isWishlisted with arguments: [15, 3]
+2026-01-07T09:52:11.149+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-5] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with arguments: [3, 15]
+2026-01-07T09:52:11.150+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-3] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.WishlistController.isWishlisted with arguments: [24, 3]
+2026-01-07T09:52:11.151+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-3] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with arguments: [3, 24]
+2026-01-07T09:52:11.158+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-5] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with return: Optional.empty
+2026-01-07T09:52:11.158+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-5] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.WishlistController.isWishlisted with return: <200 OK OK,{productId=15, wishlisted=false},[]>
+2026-01-07T09:52:11.158+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-3] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with return: Optional.empty
+2026-01-07T09:52:11.159+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-3] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.WishlistController.isWishlisted with return: <200 OK OK,{productId=24, wishlisted=false},[]>
+2026-01-07T09:52:22.548+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-6] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.ProductController.getAllProducts with arguments: [null, 0.0, 1000.0, null, true, null, price, asc, 0, 10]
+2026-01-07T09:52:22.548+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-6] com.example.product.aop.LoggingAspect    : Entering method: org.springframework.data.repository.ListCrudRepository.findAll with arguments: []
+2026-01-07T09:52:22.592+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-6] com.example.product.aop.LoggingAspect    : Exiting method: org.springframework.data.repository.ListCrudRepository.findAll with return: [com.example.product.model.Product@47182aa3, com.example.product.model.Product@3c9b314, com.example.product.model.Product@4bfe5040, com.example.product.model.Product@9a505ad, com.example.product.model.Product@11fcad6a, com.example.product.model.Product@16e9db45, com.example.product.model.Product@7913e8f5, com.example.product.model.Product@60db9cec, com.example.product.model.Product@1fbad728, com.example.product.model.Product@5886be68, com.example.product.model.Product@19071893, com.example.product.model.Product@67c90fea, com.example.product.model.Product@186eb76d, com.example.product.model.Product@26149d17, com.example.product.model.Product@68d54566, com.example.product.model.Product@44bbe735, com.example.product.model.Product@2bb336be, com.example.product.model.Product@502ab18f, com.example.product.model.Product@1a54c088, com.example.product.model.Product@32086889, com.example.product.model.Product@207c825d, com.example.product.model.Product@2ae2a82f, com.example.product.model.Product@35c6c47c, com.example.product.model.Product@11418df7, com.example.product.model.Product@713982da, com.example.product.model.Product@567c46be, com.example.product.model.Product@13fa6591, com.example.product.model.Product@30b4ff4, com.example.product.model.Product@5b331f5d, com.example.product.model.Product@dafb95, com.example.product.model.Product@6a412835, com.example.product.model.Product@f7973dc, com.example.product.model.Product@535fbaf2, com.example.product.model.Product@3f837f68, com.example.product.model.Product@792b4803, com.example.product.model.Product@4adad647, com.example.product.model.Product@59d3dd01, com.example.product.model.Product@773b60cb, com.example.product.model.Product@bd1e18c, com.example.product.model.Product@f9ce9fc]
+2026-01-07T09:52:22.984+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-6] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.ProductController.getAllProducts with return: <200 OK OK,{totalItems=2, totalPages=1, pageSize=10, currentPage=0, products=[com.example.product.payload.ProductDTO@256932e3, com.example.product.payload.ProductDTO@1288d93d]},[]>
+2026-01-07T09:52:23.018+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-7] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.WishlistController.isWishlisted with arguments: [10, 3]
+2026-01-07T09:52:23.018+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-7] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with arguments: [3, 10]
+2026-01-07T09:52:23.022+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-10] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.WishlistController.isWishlisted with arguments: [1, 3]
+2026-01-07T09:52:23.022+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-10] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with arguments: [3, 1]
+2026-01-07T09:52:23.026+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-7] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with return: Optional.empty
+2026-01-07T09:52:23.026+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-7] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.WishlistController.isWishlisted with return: <200 OK OK,{productId=10, wishlisted=false},[]>
+2026-01-07T09:52:23.028+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-10] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.repository.WishlistRepository.findByUserIdAndProduct_ProductId with return: Optional.empty
+2026-01-07T09:52:23.029+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-10] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.WishlistController.isWishlisted with return: <200 OK OK,{productId=1, wishlisted=false},[]>
+2026-01-07T09:52:24.296+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-9] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.ProductController.getProductById with arguments: [10]
+2026-01-07T09:52:24.296+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-9] com.example.product.aop.LoggingAspect    : Entering method: org.springframework.data.repository.CrudRepository.findById with arguments: [10]
+2026-01-07T09:52:24.325+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-9] com.example.product.aop.LoggingAspect    : Exiting method: org.springframework.data.repository.CrudRepository.findById with return: Optional[com.example.product.model.Product@37435c95]
+2026-01-07T09:52:24.343+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-9] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.ProductController.getProductById with return: <200 OK OK,com.example.product.payload.ProductDTO@7d6baea9,[]>
+2026-01-07T09:52:24.689+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-8] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.ProductController.getProductById with arguments: [10]
+2026-01-07T09:52:24.689+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-8] com.example.product.aop.LoggingAspect    : Entering method: org.springframework.data.repository.CrudRepository.findById with arguments: [10]
+2026-01-07T09:52:24.698+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-8] com.example.product.aop.LoggingAspect    : Exiting method: org.springframework.data.repository.CrudRepository.findById with return: Optional[com.example.product.model.Product@57f05ab7]
+2026-01-07T09:52:24.711+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-8] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.ProductController.getProductById with return: <200 OK OK,com.example.product.payload.ProductDTO@159aa27,[]>
+2026-01-07T09:52:31.044+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-4] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.ProductController.getProductById with arguments: [10]
+2026-01-07T09:52:31.044+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-4] com.example.product.aop.LoggingAspect    : Entering method: org.springframework.data.repository.CrudRepository.findById with arguments: [10]
+2026-01-07T09:52:31.046+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-4] com.example.product.aop.LoggingAspect    : Exiting method: org.springframework.data.repository.CrudRepository.findById with return: Optional[com.example.product.model.Product@3c792c98]
+2026-01-07T09:52:31.062+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-4] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.ProductController.getProductById with return: <200 OK OK,com.example.product.payload.ProductDTO@5cf8f48b,[]>
+2026-01-07T09:52:37.627+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-1] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.ProductController.getProductById with arguments: [10]
+2026-01-07T09:52:37.627+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-1] com.example.product.aop.LoggingAspect    : Entering method: org.springframework.data.repository.CrudRepository.findById with arguments: [10]
+2026-01-07T09:52:37.630+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-1] com.example.product.aop.LoggingAspect    : Exiting method: org.springframework.data.repository.CrudRepository.findById with return: Optional[com.example.product.model.Product@372de85a]
+2026-01-07T09:52:37.647+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-1] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.ProductController.getProductById with return: <200 OK OK,com.example.product.payload.ProductDTO@29cf8b95,[]>
+2026-01-07T09:52:55.945+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-2] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.ProductController.getProductById with arguments: [10]
+2026-01-07T09:52:55.945+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-2] com.example.product.aop.LoggingAspect    : Entering method: org.springframework.data.repository.CrudRepository.findById with arguments: [10]
+2026-01-07T09:52:55.961+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-2] com.example.product.aop.LoggingAspect    : Exiting method: org.springframework.data.repository.CrudRepository.findById with return: Optional[com.example.product.model.Product@51f270bd]
+2026-01-07T09:52:55.970+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-2] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.ProductController.getProductById with return: <200 OK OK,com.example.product.payload.ProductDTO@52302488,[]>
+2026-01-07T09:52:56.995+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-3] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.RatingController.checkUserRating with arguments: [10, 3]
+2026-01-07T09:52:56.995+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-5] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.controller.RatingController.checkUserRating with arguments: [1, 3]
+2026-01-07T09:52:56.995+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-3] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.repository.RatingRepository.findByProduct_ProductIdAndUserId with arguments: [10, 3]
+2026-01-07T09:52:56.995+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-5] com.example.product.aop.LoggingAspect    : Entering method: com.example.product.repository.RatingRepository.findByProduct_ProductIdAndUserId with arguments: [1, 3]
+2026-01-07T09:52:57.006+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-5] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.repository.RatingRepository.findByProduct_ProductIdAndUserId with return: null
+2026-01-07T09:52:57.006+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-3] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.repository.RatingRepository.findByProduct_ProductIdAndUserId with return: null
+2026-01-07T09:52:57.006+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-5] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.RatingController.checkUserRating with return: <200 OK OK,{userId=3, productId=1, hasRated=false, rating={}},[]>
+2026-01-07T09:52:57.006+05:30  INFO 34580 --- [product-service] [http-nio-8082-exec-3] com.example.product.aop.LoggingAspect    : Exiting method: com.example.product.controller.RatingController.checkUserRating with return: <200 OK OK,{userId=3, productId=10, hasRated=false, rating={}},[]>
+2026-01-07T09:53:04.556+05:30  INFO 34580 --- [product-service] [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-01-07T09:53:04.558+05:30  INFO 34580 --- [product-service] [RMI TCP Connection(11)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PRODUCT-SERVICE with eureka with status DOWN
+2026-01-07T09:53:04.558+05:30  INFO 34580 --- [product-service] [RMI TCP Connection(11)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1767759784558, current=DOWN, previous=UP]
+2026-01-07T09:53:04.558+05:30  INFO 34580 --- [product-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/10.75.36.196:product-service:8082: registering service...
+2026-01-07T09:53:04.592+05:30  INFO 34580 --- [product-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/10.75.36.196:product-service:8082 - registration status: 204
+2026-01-07T09:53:04.627+05:30  INFO 34580 --- [product-service] [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-07T09:53:04.639+05:30  INFO 34580 --- [product-service] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-07T09:53:04.699+05:30  INFO 34580 --- [product-service] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-07T09:53:04.700+05:30  INFO 34580 --- [product-service] [RMI TCP Connection(11)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-01-07T09:53:07.707+05:30  INFO 34580 --- [product-service] [RMI TCP Connection(11)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-01-07T09:53:07.729+05:30  INFO 34580 --- [product-service] [RMI TCP Connection(11)-127.0.0.1] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/10.75.36.196:product-service:8082": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/10.75.36.196:product-service:8082": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:915)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:895)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:672)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1156)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1102)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:91)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:90)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:123)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:189)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:450)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:170)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
+	... 68 more
+
+2026-01-07T09:53:07.730+05:30  WARN 34580 --- [product-service] [RMI TCP Connection(11)-127.0.0.1] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/10.75.36.196:product-service:8082": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+2026-01-07T09:53:07.750+05:30  INFO 34580 --- [product-service] [RMI TCP Connection(11)-127.0.0.1] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/10.75.36.196:product-service:8082": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/10.75.36.196:product-service:8082": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:915)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:895)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:672)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1156)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1102)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:91)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:90)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:123)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:189)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:450)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:170)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
+	... 69 more
+
+2026-01-07T09:53:07.751+05:30  WARN 34580 --- [product-service] [RMI TCP Connection(11)-127.0.0.1] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/10.75.36.196:product-service:8082": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+2026-01-07T09:53:07.752+05:30 ERROR 34580 --- [product-service] [RMI TCP Connection(11)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/10.75.36.196:product-service:8082 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.3.jar:2.0.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.3.jar:2.0.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-2.0.3.jar:2.0.3]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.3.jar:2.0.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.3.jar:2.0.3]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919) ~[eureka-client-2.0.3.jar:2.0.3]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900) ~[eureka-client-2.0.3.jar:2.0.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389) ~[spring-cloud-context-4.1.4.jar:4.1.4]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136) ~[spring-cloud-context-4.1.4.jar:4.1.4]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1195) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1156) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1102) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-3.3.5.jar:3.3.5]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-01-07T09:53:07.764+05:30  INFO 34580 --- [product-service] [RMI TCP Connection(11)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

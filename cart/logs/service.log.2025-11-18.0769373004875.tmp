@@ -1,0 +1,78 @@
+2025-11-20T18:03:20.775+05:30  INFO 3811 --- [CART-SERVICE] [main] com.example.cart.CartApplication         : Starting CartApplication using Java 21.0.8 with PID 3811 (/Users/yashdeshmukh/Documents/project/project/cart/target/classes started by yashdeshmukh in /Users/yashdeshmukh/Documents/project/project/cart)
+2025-11-20T18:03:20.976+05:30  INFO 3811 --- [CART-SERVICE] [main] com.example.cart.CartApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-11-20T18:03:25.899+05:30  INFO 3811 --- [CART-SERVICE] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-20T18:03:26.300+05:30  INFO 3811 --- [CART-SERVICE] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 388 ms. Found 2 JPA repository interfaces.
+2025-11-20T18:03:27.296+05:30  INFO 3811 --- [CART-SERVICE] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=014746f7-18b8-3c15-838d-aa060ec86c0f
+2025-11-20T18:03:30.556+05:30  INFO 3811 --- [CART-SERVICE] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-11-20T18:03:30.607+05:30  INFO 3811 --- [CART-SERVICE] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-20T18:03:30.608+05:30  INFO 3811 --- [CART-SERVICE] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-20T18:03:30.658+05:30  INFO 3811 --- [CART-SERVICE] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-20T18:03:30.658+05:30  INFO 3811 --- [CART-SERVICE] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9277 ms
+2025-11-20T18:03:31.741+05:30  INFO 3811 --- [CART-SERVICE] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-20T18:03:31.776+05:30  INFO 3811 --- [CART-SERVICE] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-11-20T18:03:31.801+05:30  INFO 3811 --- [CART-SERVICE] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-20T18:03:32.406+05:30  INFO 3811 --- [CART-SERVICE] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-20T18:03:32.580+05:30  INFO 3811 --- [CART-SERVICE] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-20T18:03:34.209+05:30  INFO 3811 --- [CART-SERVICE] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@629600d7
+2025-11-20T18:03:34.213+05:30  INFO 3811 --- [CART-SERVICE] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-20T18:03:34.347+05:30  INFO 3811 --- [CART-SERVICE] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-20T18:03:38.388+05:30  INFO 3811 --- [CART-SERVICE] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-20T18:03:38.863+05:30  INFO 3811 --- [CART-SERVICE] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-20T18:03:43.212+05:30  WARN 3811 --- [CART-SERVICE] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-20T18:03:44.499+05:30  INFO 3811 --- [CART-SERVICE] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'INVENTORY-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2025-11-20T18:03:47.880+05:30  INFO 3811 --- [CART-SERVICE] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-11-20T18:03:47.983+05:30  WARN 3811 --- [CART-SERVICE] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-11-20T18:03:48.256+05:30  INFO 3811 --- [CART-SERVICE] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-11-20T18:03:48.284+05:30  INFO 3811 --- [CART-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-11-20T18:03:48.287+05:30  INFO 3811 --- [CART-SERVICE] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-20T18:03:48.300+05:30  INFO 3811 --- [CART-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-11-20T18:03:48.301+05:30  INFO 3811 --- [CART-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-11-20T18:03:48.301+05:30  INFO 3811 --- [CART-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-11-20T18:03:48.302+05:30  INFO 3811 --- [CART-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-11-20T18:03:48.302+05:30  INFO 3811 --- [CART-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-11-20T18:03:48.302+05:30  INFO 3811 --- [CART-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-11-20T18:03:48.302+05:30  INFO 3811 --- [CART-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-11-20T18:03:49.067+05:30  INFO 3811 --- [CART-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-11-20T18:03:49.070+05:30  INFO 3811 --- [CART-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-11-20T18:03:49.071+05:30  INFO 3811 --- [CART-SERVICE] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-11-20T18:03:49.073+05:30  INFO 3811 --- [CART-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1763642029072 with initial instances count: 0
+2025-11-20T18:03:49.086+05:30  INFO 3811 --- [CART-SERVICE] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2025-11-20T18:03:49.087+05:30  INFO 3811 --- [CART-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1763642029087, current=UP, previous=STARTING]
+2025-11-20T18:03:49.089+05:30  INFO 3811 --- [CART-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/192.168.0.106:CART-SERVICE:8083: registering service...
+2025-11-20T18:03:49.110+05:30  INFO 3811 --- [CART-SERVICE] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2025-11-20T18:03:49.111+05:30  INFO 3811 --- [CART-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1763642029111, current=DOWN, previous=UP]
+2025-11-20T18:03:49.112+05:30  WARN 3811 --- [CART-SERVICE] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-11-20T18:03:49.123+05:30  INFO 3811 --- [CART-SERVICE] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-20T18:03:49.130+05:30  INFO 3811 --- [CART-SERVICE] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-20T18:03:49.160+05:30  INFO 3811 --- [CART-SERVICE] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-20T18:03:49.164+05:30  INFO 3811 --- [CART-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-11-20T18:03:49.184+05:30  INFO 3811 --- [CART-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/192.168.0.106:CART-SERVICE:8083 - registration status: 204
+2025-11-20T18:03:49.185+05:30  INFO 3811 --- [CART-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/192.168.0.106:CART-SERVICE:8083: registering service...
+2025-11-20T18:03:49.198+05:30  INFO 3811 --- [CART-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/192.168.0.106:CART-SERVICE:8083 - registration status: 204
+2025-11-20T18:03:49.199+05:30  INFO 3811 --- [CART-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-11-20T18:03:49.210+05:30  INFO 3811 --- [CART-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/192.168.0.106:CART-SERVICE:8083 - deregister  status: 200
+2025-11-20T18:03:49.211+05:30  INFO 3811 --- [CART-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-11-20T18:03:49.233+05:30  INFO 3811 --- [CART-SERVICE] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-20T18:03:49.246+05:30 ERROR 3811 --- [CART-SERVICE] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8083 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
+

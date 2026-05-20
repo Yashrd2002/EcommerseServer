@@ -1,0 +1,77 @@
+2025-11-03T20:11:33.603+05:30  INFO 1453 --- [auth-service] [main] c.e.authservice.AuthServiceApplication   : Starting AuthServiceApplication using Java 21.0.8 with PID 1453 (/Users/yashdeshmukh/Documents/project/project/auth-service/target/classes started by yashdeshmukh in /Users/yashdeshmukh/Documents/project/project/auth-service)
+2025-11-03T20:11:33.863+05:30  INFO 1453 --- [auth-service] [main] c.e.authservice.AuthServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-11-03T20:11:38.462+05:30  INFO 1453 --- [auth-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-03T20:11:38.933+05:30  INFO 1453 --- [auth-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 457 ms. Found 3 JPA repository interfaces.
+2025-11-03T20:11:40.162+05:30  INFO 1453 --- [auth-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c4a87ff7-cfdb-3a7e-a821-41478e5100aa
+2025-11-03T20:11:43.330+05:30  INFO 1453 --- [auth-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-11-03T20:11:43.352+05:30  INFO 1453 --- [auth-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-03T20:11:43.353+05:30  INFO 1453 --- [auth-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-03T20:11:43.590+05:30  INFO 1453 --- [auth-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-03T20:11:43.591+05:30  INFO 1453 --- [auth-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9644 ms
+2025-11-03T20:11:44.431+05:30  INFO 1453 --- [auth-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-03T20:11:44.576+05:30  INFO 1453 --- [auth-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-11-03T20:11:44.633+05:30  INFO 1453 --- [auth-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-03T20:11:45.469+05:30  INFO 1453 --- [auth-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-03T20:11:45.536+05:30  INFO 1453 --- [auth-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-03T20:11:46.662+05:30  INFO 1453 --- [auth-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fabfc79
+2025-11-03T20:11:46.666+05:30  INFO 1453 --- [auth-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-03T20:11:46.805+05:30  INFO 1453 --- [auth-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-03T20:11:50.785+05:30  INFO 1453 --- [auth-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-03T20:11:51.214+05:30  INFO 1453 --- [auth-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-03T20:11:54.605+05:30  WARN 1453 --- [auth-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-03T20:11:59.706+05:30  INFO 1453 --- [auth-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-11-03T20:11:59.831+05:30  WARN 1453 --- [auth-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-11-03T20:12:00.091+05:30  INFO 1453 --- [auth-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-11-03T20:12:00.148+05:30  INFO 1453 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-11-03T20:12:00.153+05:30  INFO 1453 --- [auth-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-03T20:12:00.162+05:30  INFO 1453 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-11-03T20:12:00.162+05:30  INFO 1453 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-11-03T20:12:00.162+05:30  INFO 1453 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-11-03T20:12:00.162+05:30  INFO 1453 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-11-03T20:12:00.162+05:30  INFO 1453 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-11-03T20:12:00.162+05:30  INFO 1453 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-11-03T20:12:00.162+05:30  INFO 1453 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-11-03T20:12:00.805+05:30  INFO 1453 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-11-03T20:12:00.809+05:30  INFO 1453 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-11-03T20:12:00.810+05:30  INFO 1453 --- [auth-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-11-03T20:12:00.812+05:30  INFO 1453 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1762180920811 with initial instances count: 2
+2025-11-03T20:12:00.823+05:30  INFO 1453 --- [auth-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTH-SERVICE with eureka with status UP
+2025-11-03T20:12:00.824+05:30  INFO 1453 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1762180920824, current=UP, previous=STARTING]
+2025-11-03T20:12:00.826+05:30  INFO 1453 --- [auth-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/192.168.1.109:auth-service:8081: registering service...
+2025-11-03T20:12:00.840+05:30  INFO 1453 --- [auth-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AUTH-SERVICE with eureka with status DOWN
+2025-11-03T20:12:00.840+05:30  INFO 1453 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1762180920840, current=DOWN, previous=UP]
+2025-11-03T20:12:00.841+05:30  WARN 1453 --- [auth-service] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-11-03T20:12:00.847+05:30  INFO 1453 --- [auth-service] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-03T20:12:00.851+05:30  INFO 1453 --- [auth-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-03T20:12:00.894+05:30  INFO 1453 --- [auth-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-03T20:12:00.895+05:30  INFO 1453 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-11-03T20:12:00.903+05:30  INFO 1453 --- [auth-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/192.168.1.109:auth-service:8081 - registration status: 204
+2025-11-03T20:12:00.903+05:30  INFO 1453 --- [auth-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/192.168.1.109:auth-service:8081: registering service...
+2025-11-03T20:12:00.914+05:30  INFO 1453 --- [auth-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/192.168.1.109:auth-service:8081 - registration status: 204
+2025-11-03T20:12:00.915+05:30  INFO 1453 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-11-03T20:12:00.923+05:30  INFO 1453 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/192.168.1.109:auth-service:8081 - deregister  status: 200
+2025-11-03T20:12:00.923+05:30  INFO 1453 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-11-03T20:12:00.942+05:30  INFO 1453 --- [auth-service] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-03T20:12:00.955+05:30 ERROR 1453 --- [auth-service] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+

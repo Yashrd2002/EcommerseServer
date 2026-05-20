@@ -1,0 +1,36 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: WALLET-SERVICE
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/wallet?createDatabaseIfNotExist=true
+    username: root
+    password: Yash@2002
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+# Stripe Configuration
+stripe:
+  secret-key: ${STRIPE_SECRET_KEY}
+  publishable-key: ${STRIPE_PUBLISHABLE_KEY}
+  webhook-secret: ${STRIPE_WEBHOOK_SECRET}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
